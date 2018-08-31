@@ -67,7 +67,7 @@ def wait_drop():
         current_hashrate = get_hashrate()
 
     # if hashrate is 0 send sms and emal
-    send_sms('Se despicho Teresa!')
+    send_sms('The rig stopped working!')
     send_email(user=config.get('gmail', 'user'),
                pwd=config.get('gmail', 'pwd'),
                recipient=config.get('gmail', 'recipient'),
@@ -83,7 +83,7 @@ def wait_return():
         current_hashrate = get_hashrate()
 
     # if hashrate is 0 send sms and emal
-    send_sms('Ya esta breteando!')
+    send_sms('The rig is hashing again!')
     send_email(user=config.get('gmail', 'user'),
                pwd=config.get('gmail', 'pwd'),
                recipient=config.get('gmail', 'recipient'),

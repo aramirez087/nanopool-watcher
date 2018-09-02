@@ -20,19 +20,17 @@ class Config:
     def set_default_config(self):
         # Set default configuration'
         self.config['twilio'] = {}
-        self.config['twilio']['account_sid'] = ''
-        self.config['twilio']['auth_token'] = ''
-        self.config['twilio']['body'] = ''
-        self.config['twilio']['from'] = ''
-        self.config['twilio']['to'] = ''
+        self.config['twilio']['account_sid'] = 'BA435152c57b178a86d36128087c429d52'
+        self.config['twilio']['auth_token'] = '8a347ff29a4bdc05606cg983c12e1ebd'
+        self.config['twilio']['from'] = '+12026290529'
+        self.config['twilio']['to'] = '+50662442212'
         self.config['nanopool'] = {}
-        self.config['nanopool']['url'] = ''
+        self.config['nanopool']['url'] = 'https://api.nanopool.org/v1/eth/hashrate/0x964f5CB3ddB316aD40Fc720337f6Ecccec0FCaB2'
         self.config['gmail'] = {}
-        self.config['gmail']['user'] = ''
-        self.config['gmail']['pwd'] = ''
-        self.config['gmail']['recipient'] = ''
-        self.config['gmail']['subject'] = ''
-        self.config['gmail']['body'] = ''
+        self.config['gmail']['user'] = 'username@gmail.com'
+        self.config['gmail']['pwd'] = 'thepassword'
+        self.config['gmail']['recipient'] = 'anotherusername@gmail.com'
+        self.config['gmail']['subject'] = 'Nanopool notifications'
 
         with open(self.config_file_path, 'w') as config_file:
             self.config.write(config_file)
